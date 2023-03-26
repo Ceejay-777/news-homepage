@@ -12,6 +12,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: var(--Inter);
 }
 
 img {
@@ -42,12 +43,13 @@ img {
 .nav {
     margin: 30px 0;
     justify-content: space-between;
-    border: 1px solid black;
     align-items: center;
 }
 
 .main-nav-logo-container {
-    min-width: 65px;
+    width: 50px;
+    max-width: 65%;
+    min-width: 50px;
 }
 
 .main-nav-desktop {
@@ -66,9 +68,8 @@ img {
 }
 
 .nav-menu {
-    position: absolute;
+    position: fixed;
     flex-direction: column;
-    padding-top: 30px;
     top: 0px;
     right: 0px;
     background-color: white;
@@ -76,6 +77,8 @@ img {
     max-width: 300px;
     height: 100%;
     padding: 5vw;
+    padding-top: 30px;
+    display: none;
 }
 
 .menu-close-container {
@@ -86,19 +89,21 @@ img {
     margin-top: 80px;
     padding-inline-start: 0px;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 
 .main-nav-mobile-item {
     list-style: none;
 }
 
-
 .main-nav-mobile-link {
     text-decoration: none;
     color: black;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
+
+
 
 
 
