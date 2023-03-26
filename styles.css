@@ -23,9 +23,30 @@ img {
     display: none;
 }
 
+.flex {
+    display: flex
+}
+
+.grid {
+    display: grid;
+}
+
 .main-container {
     width: 90%;
     margin: 0 auto;
+}
+
+.container {
+    width: fit-content;
+}
+
+.main-nav-item {
+    list-style: none;
+}
+
+.main-nav-link {
+    text-decoration: none;
+    color: var(--dark-grayish-blue);
 }
 
 
