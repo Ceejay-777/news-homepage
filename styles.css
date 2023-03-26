@@ -40,8 +40,25 @@ img {
     width: fit-content;
 }
 
+.nav {
+    margin: 40px 0;
+    justify-content: space-between;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.main-nav-logo-container {
+    min-width: 65px;
+
+}
+
+.main-nav {
+    gap: 40px;
+}
+
 .main-nav-item {
     list-style: none;
+    display: none;
 }
 
 .main-nav-link {
