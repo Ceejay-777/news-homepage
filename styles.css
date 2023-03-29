@@ -36,6 +36,7 @@ img {
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 630px;
 }
 
 .container {
@@ -155,9 +156,7 @@ img {
 
 .aside-cat-container  {
     border-bottom: 1px solid var(--grayish-blue);
-    /* margin-bottom: 30px; */
     padding: 30px 0px;
-    /* border: 1px solid pink; */
 }
 
 .aside-cat-container:last-child {
@@ -179,7 +178,40 @@ img {
     margin-bottom: 0px;
 }
 
+.sec-two {
+    gap: 30px;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr; */
+}
 
+.sec-two-item {
+    grid-template-columns: auto 1fr;
+    grid-auto-flow: row;
+    gap: 25px;
+}
+
+.sec-two-item-image-container {
+    width: 100px;
+}
+
+.sec-two-item-num {
+    color: var(--grayish-blue);
+    font-size: 2rem;
+}
+
+.sec-two-item-topic {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+
+.sec-two-item-sec-text {
+    color: var(--dark-grayish-blue);
+    line-height: 1.5rem;
+}
+
+@media (min-width: 701px) {
+    
+}
 
 
 
