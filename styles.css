@@ -36,7 +36,6 @@ img {
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 30px;
-    max-width: 630px;
 }
 
 .container {
@@ -210,7 +209,36 @@ img {
 }
 
 @media (min-width: 701px) {
-    
+    .main-container {
+        grid-template-areas: 
+            "nav nav nav"
+            "banner banner aside"
+            "sec-one sec-one aside"
+            "sec-two sec-two sec-two"
+        ;
+    }
+
+    .nav {
+        grid-area: nav;
+    }
+
+    .banner {
+        grid-area: banner;
+    }
+
+    .aside {
+        grid-area: aside;
+    }
+
+    .sec-one {
+        grid-area: sec-one;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sec-two {
+        grid-area: sec-two;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 
