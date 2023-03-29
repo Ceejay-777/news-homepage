@@ -105,6 +105,10 @@ img {
     font-weight: 500;
 }
 
+.banner-image-desktop {
+    display: none;
+}
+
 .sec-one {
     grid-template-columns: 1fr;
     gap: 20px;
@@ -210,6 +214,7 @@ img {
 
 @media (min-width: 701px) {
     .main-container {
+        grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
             "nav nav nav"
             "banner banner aside"
@@ -238,6 +243,14 @@ img {
     .sec-two {
         grid-area: sec-two;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .banner-image-desktop {
+        display: inline;
+    }
+
+    .banner-image-mobile {
+        display: none;
     }
 }
 
