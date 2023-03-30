@@ -11,7 +11,6 @@ document.querySelector(".menu-close-image").addEventListener("click", function()
 setInterval(function() {
     let width = document.body.offsetWidth;
     if (width > 650 &&  document.querySelector(".nav-menu-container").classList.contains("block")) {
-        console.log("okay");
         document.querySelector(".nav-menu-container").classList.remove("block");
         document.querySelector(".hamburger").classList.remove("hidden");
     };
