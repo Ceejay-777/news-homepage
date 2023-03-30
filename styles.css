@@ -31,6 +31,10 @@ img {
     display: flex
 }
 
+.block {
+    display: block;
+}
+
 .grid {
     display: grid;
 }
