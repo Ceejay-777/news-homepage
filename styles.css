@@ -78,6 +78,10 @@ img {
     color: var(--dark-grayish-blue);
 }
 
+.main-nav-desktop-link:hover {
+    color: black;
+}
+
 .nav-menu {
     position: fixed;
     flex-direction: column;
@@ -96,10 +100,12 @@ img {
     align-self: flex-end;
 }
 
-.menu-close-image:hover {
-    transform: rotatey(40deg);
-    /* background-color: black; */
+.menu-close-image {
+    transition: transform ease-in-out 0.5s;
+}
 
+.menu-close-image:hover {
+    transform: rotatey(180deg);
 }
 
 .main-nav-mobile {
@@ -158,6 +164,10 @@ img {
     border: none;
     padding: 1rem;
     margin-top: 30px;
+}
+
+.sec-one-btn:hover {
+    opacity: 0.8;
 }
 
 .aside {
