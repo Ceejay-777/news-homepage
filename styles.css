@@ -36,6 +36,7 @@ img {
     margin: 0 auto;
     grid-template-columns: 1fr;
     gap: 30px;
+    max-width: 650px;
 }
 
 .container {
@@ -87,6 +88,12 @@ img {
     align-self: flex-end;
 }
 
+.menu-close-image:hover {
+    transform: rotatey(40deg);
+    /* background-color: black; */
+
+}
+
 .main-nav-mobile {
     margin-top: 80px;
     padding-inline-start: 0px;
@@ -111,14 +118,14 @@ img {
 
 .sec-one {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 40px;
 }
 
 .sec-one-pri-text {
     font-size: 3rem;
     color: var(--very-dark-blue);
     line-height: 3rem;
-    font-weight: 700;
+    font-weight: 900;
 }
 
 .sec-one-sec-text {
@@ -133,7 +140,6 @@ img {
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white;
-    /* font-size: 14px; */
 }
 
 .sec-one-btn {
@@ -143,7 +149,7 @@ img {
     padding: 0.5rem auto;
     border: none;
     padding: 1rem;
-    margin: 30px 0;
+    margin-top: 30px;
 }
 
 .aside {
@@ -182,9 +188,7 @@ img {
 }
 
 .sec-two {
-    gap: 30px;
-    /* grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr; */
+    gap: 40px;
 }
 
 .sec-two-item {
@@ -211,14 +215,9 @@ img {
     line-height: 1.5rem;
 }
 
-@media (min-width: 701px) {
-    
-}
-
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
     .main-container {
         grid-template-columns: repeat(3, 1fr);
-        /* grid-template-rows:  auto auto fit-content auto; */
         grid-template-areas: 
             "nav nav nav"
             "banner banner aside"
@@ -226,6 +225,7 @@ img {
             "sec-two sec-two sec-two"
         ;
         gap: 40px;
+        max-width: none;
     }
 
     .nav {
@@ -233,7 +233,7 @@ img {
     }
 
     .hamburger-container, .hamburger {
-        display: none
+        display: none;
     }
 
     .main-nav-desktop {
@@ -244,15 +244,15 @@ img {
         display: inline;
     }
 
-
     .banner {
         grid-area: banner;
     }
 
     .aside {
         grid-area: aside;
-        height: fit-content;
-        /* align-self: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .sec-one {
@@ -273,7 +273,13 @@ img {
     .banner-image-mobile {
         display: none;
     }
+
+    .nav-menu {
+        display: none;
+    }
 }
+
+
 
 
 
