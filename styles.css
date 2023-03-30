@@ -15,6 +15,10 @@
     font-family: var(--Inter);
 }
 
+body {
+    width: 100%;
+}
+
 img {
     max-width: 100%;
 }
@@ -81,7 +85,7 @@ img {
     height: 100%;
     padding: 5vw;
     padding-top: 30px;
-    display: none;
+    display: flex;
 }
 
 .menu-close-container {
@@ -215,6 +219,21 @@ img {
     line-height: 1.5rem;
 }
 
+@media (min-width: 650px) {
+    .hamburger-container, .hamburger {
+        display: none;
+    }
+
+    .main-nav-desktop {
+        display: flex;
+    }
+
+    .main-nav-desktop-item {
+        display: inline;
+    }
+
+}
+
 @media (min-width: 1200px) {
     .main-container {
         grid-template-columns: repeat(3, 1fr);
@@ -232,18 +251,7 @@ img {
         grid-area: nav;
     }
 
-    .hamburger-container, .hamburger {
-        display: none;
-    }
-
-    .main-nav-desktop {
-        display: flex;
-    }
-
-    .main-nav-desktop-item {
-        display: inline;
-    }
-
+    
     .banner {
         grid-area: banner;
     }
